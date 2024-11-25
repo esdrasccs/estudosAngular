@@ -1,0 +1,112 @@
+.register-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: rgb(243, 240, 240);    
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+
+    .content-registration-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 400px;
+        width:  800px;        
+        border: solid 3px white;        
+        border-radius: 10px;
+
+        .singin-Welcome-Section{
+            flex: 6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center ;
+            align-items: center;
+            background-color: rgb(77, 158, 131);
+            color: white;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px 0 0 10px;
+            
+            
+            h1{
+                margin: 5px;
+            }
+
+            p{
+                margin: 5px;
+            }          
+        }
+        .singup-create-accaunt-Section{
+            flex: 9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center ;
+            align-items: center;
+            background-color: white;
+            color: rgb(77, 158, 131);
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px 0 0 10px;
+
+            .singup-social-resistration{
+                display: flex;
+                flex-direction: row;                
+                justify-content: space-around;
+                font-size: 20px;                
+                align-items: center;  
+                
+                
+                i{
+                    color: rgb(195, 189, 189);
+
+                    &:hover {
+                        color: rgb(22, 109, 80);
+                    }
+                }
+
+                
+
+                
+            }
+
+        }
+
+        .singup-creat-accaunt-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            
+            div{            
+                border: none;                               
+                padding-left: 20px;
+                padding-right: 20px;                
+                border-radius: 20px 20px 20px 20px;
+                background-color: rgb(241, 239, 239);  
+                margin-bottom: 10px;            
+                color: gray;
+                 
+                
+                i{
+                    flex:2;
+                    padding-right: 20px;
+                    font-size: 30px;
+                    
+                }
+
+                &:focus-within{
+                    outline: solid 1px rgba(128, 128, 128, 0.564);
+                }
+                
+            }
+        }
+    }
+    
+    
+}
+

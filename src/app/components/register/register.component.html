@@ -1,0 +1,54 @@
+<div class="register-container">
+    <div class="content-registration-container content">
+        <section class="singin-Welcome-Section content">
+            <h1> Welcome Back!</h1>        
+            <p>To keep connected with US</p>        
+            <p>Please login with your personal info</p>    
+      
+            <app-btnsubmit customClass="btnSingInRegister" routerLink="/login" label="SING IN" (clicked)="singInClick()" ></app-btnsubmit>
+        </section>
+        <section class="singup-create-accaunt-Section col">
+            <section class="col">
+                <div class="row"><h2>Create Account</h2></div>
+                
+        
+                <div class="singup-social-resistration col">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                
+                
+                <div class="row"><h5>Or use your email for resistration</h5> </div> 
+            </section>
+            
+            <section class="row">
+                <div  class="form form-group singup-creat-accaunt-form ">      
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <i class="fa-solid fa-user"></i>
+                        <app-generic-input generic_input_id="name" generic_input_type="text" [generic_input_name]="name" generic_input_placeHolder="Enter your full name"></app-generic-input>                
+                    </div>
+            
+                    <!-- Email -->
+                    <div for="">
+                        <i class="fa-solid fa-envelope"></i>
+                        <app-generic-input generic_input_id="email" generic_input_type="email" [generic_input_name]="email" generic_input_placeHolder="Enter your email"></app-generic-input>                
+                    </div>                
+                
+                    <!-- Password -->
+                    <div class="divPassword">
+                        <i class="fa-solid fa-lock"></i>
+                        <app-generic-input generic_input_id="password" generic_input_type="password" [generic_input_name]="name" generic_input_placeHolder="Enter your password"></app-generic-input>                
+                    </div>     
+
+                    <!-- Submit Button -->
+                    <app-btnsubmit customClass="btnSingUp" label="SING UP" (clicked)="singUpClick()" ></app-btnsubmit>
+                </div>
+            </section>
+        </section>
+
+    </div>
+    
+      
+    </div>
